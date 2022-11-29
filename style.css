@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    width: 100%;
+    height:100vh;
+    background:#97cba9;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.hero h1{
+    text-align: center;
+    color:#000;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+.slide_row{
+    width: 3200px;
+    height: 400px;
+    display: flex;
+    
+    transition: 0.5s;
+}
+.slide_col{
+    width:800px;
+    height: 295px;
+    position: relative;
+    top: 70px;
+}
+.user_img{
+    position:absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+  
+}
+.user_img img{
+    border-radius: 10px;
+    
+}
+
+.user_text{
+    position: absolute;
+    top: 10%;
+    color: white;
+    width: 380px;
+    background: #2b4353;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 25px;
+    z-index: 2;
+}
+.user_text h2{
+    margin: 10px 0;
+    text-decoration:underline;
+}
+.container{
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    width: 800px;
+   
+}
+.indicator{
+    width: 50px;
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    bottom: -50px;
+
+}
+.btn{
+    border-radius: 32px;
+    margin: 21px;
+    padding: 4px 13px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    padding:4px 26px;
+}
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

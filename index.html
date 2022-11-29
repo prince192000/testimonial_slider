@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial_slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+<h1>Testimonial Slider</h1>
+<div class="container">
+    <div class="indicator">
+        <span class="btn active"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+    </div>
+    <div class="testimonial">
+<div class="slide_row" id="slide">
+    <div class="slide_col">
+        <div class="user_text">
+            <p>The Red Fort or Lal Qila is a historic fort in Old Delhi, Delhi in India that served as the main residence of the Mughal Emperors. Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. </p>
+            <h2> Red Fort</h2>
+        </div>
+        <div class="user_img">
+            <img src="red_fort.jpg" alt="image">
+        </div>
+    </div>
+    <div class="slide_col">
+        <div class="user_text">
+            <p>The India Gate is a war memorial located near the Rajpath on the eastern edge of the "ceremonial axis" of New Delhi, formerly called duty path. It stands as a memorial to 84,000 soldiers of the British Indian Army  </p>
+            <h2> India Gate</h2>
+        </div>
+        <div class="user_img">
+            <img src="india_gate.jpg" alt="image">
+        </div>
+    </div>
+    <div class="slide_col">
+        <div class="user_text">
+            <p>The Taj Mahal  is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife,  </p>
+            <h2> Taj Mahal</h2>
+        </div>
+        <div class="user_img">
+            <img src="taj_mahal.jpg" alt="image">
+        </div>
+    </div>
+    <div class="slide_col">
+        <div class="user_text">
+            <p>The Gateway of India is an arch-monument built in the early 20th century in the city of Bombay (Mumbai), India. It was erected to commemorate the landing of King-Emperor George V, the first British monarch to visit India, in December 1911 at Strand Road near Wellington Fountain. </p>
+            <h2> Gateway Of India</h2>
+        </div>
+        <div class="user_img">
+            <img src="gateway_of_india.jpg" alt="image">
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+    </div>
+    
+
+
+    <script>
+
+        var btn =  document.getElementsByClassName('btn');
+        var slide = document.getElementById('slide');
+
+btn[0].onclick = function(){
+slide.style.transform = "translateX(0px)";
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active");
+
+}
+this.classList.add("active")
+
+}
+btn[1].onclick = function(){
+slide.style.transform = "translateX(-800px)";
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active");
+
+}
+this.classList.add("active")
+
+}
+btn[2].onclick = function(){
+slide.style.transform = "translateX(-1600px)";
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active");
+
+}
+this.classList.add("active")
+}
+btn[3].onclick = function(){
+slide.style.transform = "translateX(-2400px)";
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active");
+
+}
+this.classList.add("active")
+}
+
+    </script>
+</body>
+</html>
